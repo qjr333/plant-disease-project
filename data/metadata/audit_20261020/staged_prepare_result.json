@@ -1,0 +1,22 @@
+{
+  "status": "ready",
+  "seed": 42,
+  "ratios_by_group": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "counts": {
+    "pv_train": 4194,
+    "pv_val": 908,
+    "pv_test": 896,
+    "plantdoc_external_test": 441
+  },
+  "idempotent_same_seed": true,
+  "manifest_hashes": {
+    "plantdoc_external_test.csv": "5a7b0d52ccb9cd6bbb1a62f259c59e24695aa4de5b8822890b9cc7388fdf560a",
+    "pv_test.csv": "cba9c4c137dd1b23eb0687378a434845078c508632ed8711caff7968a64aa3b0",
+    "pv_train.csv": "c99729dee20b3d15267af98618fb11343468bfc463a330ebe0634882f32763af",
+    "pv_val.csv": "c3df4398e7556aa9d1f988afd2e62a60cea62271b830748c75b84e40a0ef2d95"
+  }
+}

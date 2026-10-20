@@ -1,0 +1,3 @@
+# Optional dependencies for notebooks 06 and 07; install core requirements first.
+grad-cam
+gradio

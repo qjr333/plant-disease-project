@@ -1,0 +1,15 @@
+{
+  "status": "ready",
+  "seed": 42,
+  "ratios_by_group": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "counts": {
+    "pv_train": 4194,
+    "pv_val": 908,
+    "pv_test": 896,
+    "plantdoc_external_test": 441
+  }
+}

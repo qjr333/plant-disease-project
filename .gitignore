@@ -1,0 +1,32 @@
+# OS / Python / Jupyter
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Raw datasets and archives: retain small metadata and split CSVs in Git.
+/data/plantvillage/
+/data/plantdoc/train/
+/data/plantdoc/test/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Large weights and generated experiment artifacts.
+*.pt
+*.pth
+*.ckpt
+/outputs/runs/*
+!/outputs/runs/.gitkeep
+/outputs/figures/*
+!/outputs/figures/.gitkeep
+/outputs/tables/*
+!/outputs/tables/.gitkeep

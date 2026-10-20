@@ -1,0 +1,10 @@
+{
+  "baseline_models": ["resnet18", "mobilenet_v2", "efficientnet_b0"],
+  "finetuning_strategies": ["freeze", "partial", "full"],
+  "augmentations": ["none", "basic", "combined"],
+  "seeds": [42],
+  "selected_backbone": null,
+  "selected_finetuning": null,
+  "evaluation_runs": [],
+  "evaluation_locked": false
+}

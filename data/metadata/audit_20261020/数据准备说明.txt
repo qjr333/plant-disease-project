@@ -1,0 +1,52 @@
+植物叶片病害项目数据准备结果
+完成日期：2026-10-20（Asia/Shanghai）
+
+已填好类别配置、全部所选候选样本的取舍记录、全部保留样本的分组记录，并生成四份正式划分。
+类别：番茄细菌斑病、番茄早疫病、番茄晚疫病、番茄叶霉病、番茄斑枯病
+候选8310张；保留6439张；排除1871张。
+
+固定划分（随机种子42，按PlantVillage叶片组约70%/15%/15%）：
+pv_train: 4194 张
+pv_val: 908 张
+pv_test: 896 张
+plantdoc_external_test: 441 张
+
+各类别保留数量（PlantVillage / PlantDoc）：
+番茄细菌斑病: 2127 / 73
+番茄早疫病: 999 / 76
+番茄晚疫病: 920 / 102
+番茄叶霉病: 952 / 73
+番茄斑枯病: 1000 / 117
+
+审核和分组方法：
+全部8310张检查了当前文件SHA256、图片解码和RGB像素。保留源数据类别，不按模型预测挑选图片。
+PlantVillage5998张能通过原文件名、类别命名空间精确匹配官方叶片表，保留完整来源组编号。
+其余1761张没有可靠分组依据，记录排除原因，原始图片不删除。
+PlantDoc551张全部经过缩略图内容初筛，对近重复、镜像、裁切及标签冲突候选做了并排核对。
+明确冲突的原图版本、来源文件名指向其他物种或病害、教学幻灯片/插图/明显拼版等样本已排除。
+PlantDoc保留图的生物叶片身份仍未知，按类别设保守外测桶，所有样本固定仅作external_test，不参与训练/调参。
+reviewed=true表示已核对分组记录与该政策，不表示已恢复未知叶片身份或进行了专家病理确诊。
+
+验证结果：
+8310个候选全部有明确keep/exclude和理由，6439个保留样本全部有非空分组记录。
+候选覆盖、路径唯一、标签映射、跨划分组ID/SHA256/像素重复、PlantDoc用途均通过独立检查。
+项目自带prepare_manifests在临时副本与实际目录均通过，同种子重复生成不改变划分。
+四份清单均通过项目现有PyTorch数据加载器检查，批次尺寸为4×3×224×224。
+
+下一步：
+从项目根目录激活现有虚拟环境并启动Jupyter，打开02_backbone_comparison.ipynb开始骨干网络实验。
+02当前RUN_TRAINING=True；首次训练可能下载ImageNet预训练权重。此次只完成数据准备，没有开始训练。
+01如需重新查看，重新运行即可；即使PREPARE_SPLITS=False，四份正式清单已经存在。
+
+追溯：
+原三个空文件备份在data/metadata/audit_20261020/before/；逐图审核证据、官方映射及校验结果在同一audit目录。
+
+来源和范围限制：
+官方叶片映射：https://github.com/spMohanty/PlantVillage-Dataset/tree/master/leaf_grouping
+官方分组生成规则：https://github.com/spMohanty/PlantVillage-Dataset/blob/master/leaf_grouping/aggregate_map.py
+PlantDoc：https://github.com/pratikkayal/PlantDoc-Dataset
+PlantVillage未逐图进行专家病理诊断；保留样本沿用源标签并有官方叶片组依据。
+PlantVillage因官方分组覆盖不足排除1761张，评价对象是此固定来源可核对子集。
+PlantDoc完整进行了视觉内容初筛及重复/冲突筛查，但病害标签沿用源标注，非专家病理确诊。
+PlantDoc原始叶片/采集来源身份未知；按类别保守合为不拆分外测桶，reviewed仅表示政策和记录已核对。
+近重复筛查不能证明所有同源裁剪均已识别，不能把外测图片视为来源完全独立。

@@ -1,0 +1,42 @@
+{
+  "pv_train": {
+    "records": 4194,
+    "batch_shape": [
+      4,
+      3,
+      224,
+      224
+    ],
+    "label_range_valid": true
+  },
+  "pv_val": {
+    "records": 908,
+    "batch_shape": [
+      4,
+      3,
+      224,
+      224
+    ],
+    "label_range_valid": true
+  },
+  "pv_test": {
+    "records": 896,
+    "batch_shape": [
+      4,
+      3,
+      224,
+      224
+    ],
+    "label_range_valid": true
+  },
+  "plantdoc_external_test": {
+    "records": 441,
+    "batch_shape": [
+      4,
+      3,
+      224,
+      224
+    ],
+    "label_range_valid": true
+  }
+}

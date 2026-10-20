@@ -1,0 +1,272 @@
+[
+  {
+    "a": "data/plantdoc/test/tomato_septoria_leaf_spot/pd_test_tomato_septoria_leaf_spot_000010.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000079.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/test/tomato_leaf_bacterial_spot/pd_test_tomato_leaf_bacterial_spot_000002.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000069.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/test/tomato_leaf_bacterial_spot/pd_test_tomato_leaf_bacterial_spot_000008.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000130.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/test/tomato_leaf_late_blight/pd_test_tomato_leaf_late_blight_000002.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000055.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/test/tomato_leaf_yellow_virus/pd_test_tomato_leaf_yellow_virus_000006.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_yellow_virus/pd_train_tomato_leaf_yellow_virus_000065.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000010.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000053.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000016.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000077.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000018.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000020.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000026.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000043.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000038.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000068.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000040.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000072.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000067.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000100.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000027.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000080.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000046.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000037.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000050.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000135.png",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000063.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000051.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000081.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000140.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000122.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000123.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000124.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000125.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000018.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000019.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000058.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_bacterial_spot/pd_train_tomato_leaf_bacterial_spot_000067.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000002.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000015.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000007.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000029.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000041.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000081.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_mosaic_virus/pd_train_tomato_leaf_mosaic_virus_000012.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_yellow_virus/pd_train_tomato_leaf_yellow_virus_000033.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_yellow_virus/pd_train_tomato_leaf_yellow_virus_000032.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_yellow_virus/pd_train_tomato_leaf_yellow_virus_000049.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_yellow_virus/pd_train_tomato_leaf_yellow_virus_000055.jpg",
+    "b": "data/plantdoc/train/tomato_mold_leaf/pd_train_tomato_mold_leaf_000085.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "pHash candidate pair visually confirmed"
+  },
+  {
+    "a": "data/plantdoc/test/tomato_septoria_leaf_spot/pd_test_tomato_septoria_leaf_spot_000005.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000031.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000017.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000018.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000021.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000022.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000024.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000025.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000029.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000030.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000077.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000094.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000046.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000139.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000126.jpg",
+    "b": "data/plantdoc/train/tomato_septoria_leaf_spot/pd_train_tomato_septoria_leaf_spot_000127.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "Visually confirmed same source photo, altered crop/size, targeted review pd_crop_pairs.jpg"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000018.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000020.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：叶片位置、斑点轮廓、塑料地膜纹理及背景完全对应，为同一照片尺寸/编码变体"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000010.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000053.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：叶脉、卷边、坏死区与背景枝干完全对应，存在裁切和文字叠加差异"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000016.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000077.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：病斑、叶片破口及背景完全对应，为同一照片变体"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000040.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000072.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：叶片、枝条和土壤纹理完全对应，署名尺寸位置略有差异"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000051.jpg",
+    "b": "data/plantdoc/train/tomato_early_blight_leaf/pd_train_tomato_early_blight_leaf_000052.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图及水平翻转放大核对：病斑边界、叶脉和边缘损伤完全对应，为同一照片镜像及裁切变体；图库水印不同"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000002.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000015.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：双叶片位置、病斑及背景枝干完全对应，为同一照片变体"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000007.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000029.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：卷叶边缘、叶脉纹理和背景完全对应，为同一照片变体"
+  },
+  {
+    "a": "data/plantdoc/test/tomato_leaf_late_blight/pd_test_tomato_leaf_late_blight_000002.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000055.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：叶脉、折叠坏死区和背景完全对应，为同一照片尺寸/编码变体"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000041.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000081.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：叶脉、病斑轮廓及08/19/2009 15:53时间戳完全对应，为同一照片变体"
+  },
+  {
+    "a": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000062.jpg",
+    "b": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000063.jpg",
+    "relation": "same_photo_variant",
+    "evidence": "原图并排核对：坏死区、叶脉、绿色叶缘和背景位置对应，为同一照片紧裁切变体"
+  }
+]

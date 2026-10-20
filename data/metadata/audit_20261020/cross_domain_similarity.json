@@ -1,0 +1,9 @@
+[
+  {
+    "pd": "data/plantdoc/train/tomato_leaf_late_blight/pd_train_tomato_leaf_late_blight_000042.jpg",
+    "pv": "data/plantvillage/color/tomato_late_blight/pv_color_tomato_late_blight_000467.jpg",
+    "phash_distance": 6,
+    "dhash_distance": 19,
+    "pixel_equal": false
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-20",
+  "candidate_count": 8310,
+  "review_counts": {
+    "exclude": 1871,
+    "keep": 6439
+  },
+  "retained_group_rows": 6439,
+  "classes": [
+    {
+      "label": "tomato_bacterial_spot",
+      "display_name": "番茄细菌斑病",
+      "plantvillage": {
+        "candidate": 2127,
+        "keep": 2127,
+        "exclude": 0
+      },
+      "plantdoc": {
+        "candidate": 110,
+        "keep": 73,
+        "exclude": 37
+      }
+    },
+    {
+      "label": "tomato_early_blight",
+      "display_name": "番茄早疫病",
+      "plantvillage": {
+        "candidate": 1000,
+        "keep": 999,
+        "exclude": 1
+      },
+      "plantdoc": {
+        "candidate": 88,
+        "keep": 76,
+        "exclude": 12
+      }
+    },
+    {
+      "label": "tomato_late_blight",
+      "display_name": "番茄晚疫病",
+      "plantvillage": {
+        "candidate": 1909,
+        "keep": 920,
+        "exclude": 989
+      },
+      "plantdoc": {
+        "candidate": 111,
+        "keep": 102,
+        "exclude": 9
+      }
+    },
+    {
+      "label": "tomato_leaf_mold",
+      "display_name": "番茄叶霉病",
+      "plantvillage": {
+        "candidate": 952,
+        "keep": 952,
+        "exclude": 0
+      },
+      "plantdoc": {
+        "candidate": 91,
+        "keep": 73,
+        "exclude": 18
+      }
+    },
+    {
+      "label": "tomato_septoria_leaf_spot",
+      "display_name": "番茄斑枯病",
+      "plantvillage": {
+        "candidate": 1771,
+        "keep": 1000,
+        "exclude": 771
+      },
+      "plantdoc": {
+        "candidate": 151,
+        "keep": 117,
+        "exclude": 34
+      }
+    }
+  ],
+  "status": "ready",
+  "seed": 42,
+  "ratios_by_group": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "counts": {
+    "pv_train": 4194,
+    "pv_val": 908,
+    "pv_test": 896,
+    "plantdoc_external_test": 441
+  },
+  "installed_at": "2026-10-20T15:13:22.651151+08:00",
+  "source_leaf_map_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/leaf_grouping/leaf-map.json",
+  "source_leaf_map_sha256": "3b4b253683c6911744959a3870a92509b1faa1ee34e9f8585e21d0fe6337a25b",
+  "installed_file_sha256": {
+    "configs/labels.yaml": "5ccf787e536f0bf6e63e09fffc7ced75c100e4d156a7dac0ea10b9f3f0e44ed2",
+    "data/metadata/review_decisions.csv": "02212def95c490435eec818438b63a8115829f17408c2ac7e282390197720a0a",
+    "data/metadata/sample_groups.csv": "69128389170181925ae0f328651ca65f08970c959b9fb03542564ad1c3529844",
+    "data/splits/plantdoc_external_test.csv": "5a7b0d52ccb9cd6bbb1a62f259c59e24695aa4de5b8822890b9cc7388fdf560a",
+    "data/splits/pv_test.csv": "cba9c4c137dd1b23eb0687378a434845078c508632ed8711caff7968a64aa3b0",
+    "data/splits/pv_train.csv": "c99729dee20b3d15267af98618fb11343468bfc463a330ebe0634882f32763af",
+    "data/splits/pv_val.csv": "c3df4398e7556aa9d1f988afd2e62a60cea62271b830748c75b84e40a0ef2d95",
+    "data/splits/split_summary.json": "057439490d7ff7ec04a9ffd391386aa112aa8c047a2efbb42e4a6c162a4b93f3"
+  },
+  "provenance_limitations": [
+    "PlantVillage未逐图进行专家病理诊断；保留样本沿用源标签并有官方叶片组依据。",
+    "PlantVillage因官方分组覆盖不足排除1761张，评价对象是此固定来源可核对子集。",
+    "PlantDoc完整进行了视觉内容初筛及重复/冲突筛查，但病害标签沿用源标注，非专家病理确诊。",
+    "PlantDoc原始叶片/采集来源身份未知；按类别保守合为不拆分外测桶，reviewed仅表示政策和记录已核对。",
+    "近重复筛查不能证明所有同源裁剪均已识别，不能把外测图片视为来源完全独立。"
+  ]
+}
