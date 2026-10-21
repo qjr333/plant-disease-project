@@ -1,0 +1,28 @@
+{
+  "run_id": "e2_efficientnet_b0_partial_basic_s42_20261021T053649_8be1eb",
+  "status": "completed",
+  "smoke_test": false,
+  "started_at": "2026-10-21T05:36:49.679005+00:00",
+  "epochs_completed": 8,
+  "dataset_fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815",
+  "sample_counts": {
+    "train": 10543,
+    "val": 2264
+  },
+  "parameters": {
+    "total": 4017796,
+    "trainable": 1139640,
+    "frozen": 2878156
+  },
+  "device": "mps",
+  "best_score": 0.9854808021389146,
+  "best_epoch": 5,
+  "validation_metrics": {
+    "loss": 0.047014343829394824,
+    "accuracy": 0.9880742049469965,
+    "macro_f1": 0.9854808021389146
+  },
+  "seconds": 501.6358819999999,
+  "monitor": "val_macro_f1",
+  "finished_at": "2026-10-21T05:45:11.361402+00:00"
+}

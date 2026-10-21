@@ -1,0 +1,80 @@
+{
+  "seed": 42,
+  "device": "auto",
+  "data": {
+    "train_manifest": "data/splits/e5_pd_train.csv",
+    "val_manifest": "data/splits/e5_pd_val.csv",
+    "test_manifest": "data/splits/pv_test.csv",
+    "external_manifest": "data/splits/plantdoc_external_all.csv",
+    "external_train_manifest": "data/splits/plantdoc_external_train.csv",
+    "external_test_manifest": "data/splits/plantdoc_external_test.csv",
+    "image_size": 224,
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "training": {
+    "epochs": 8,
+    "batch_size": 16,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "lr_by_strategy": {
+      "freeze": 0.001,
+      "partial": 0.0001,
+      "full": 0.0001
+    },
+    "weight_decay": 0.0001,
+    "early_stopping": true,
+    "patience": 3,
+    "num_workers": 0,
+    "monitor": "val_macro_f1"
+  },
+  "model": {
+    "name": "efficientnet_b0",
+    "weights": "IMAGENET1K_V1",
+    "finetuning": "freeze"
+  },
+  "augmentation": "basic",
+  "experiment_stage": "E5",
+  "smoke_test": false,
+  "parent_run_id": "e4_field_robust_v1_20261021T102435_db9cb6",
+  "augmentation_params": {
+    "blur_probability": 0.35,
+    "blur_sigma": [
+      0.4,
+      1.4
+    ],
+    "small_subject_probability": 0.2,
+    "small_subject_scale": [
+      0.7,
+      0.95
+    ],
+    "lighting_probability": 0.15,
+    "base_augmentation": "combined"
+  },
+  "experiment_name": "e5_b_e4_plantdoc_head",
+  "e5_adaptation": {
+    "training_domain": "plantdoc",
+    "source_model": "e4_field_robust_v1_20261021T102435_db9cb6",
+    "trainable_layers": "classifier_only",
+    "split_sha256": {
+      "e5_train": "a65bfd4f2f6172ddfb7bb218cfc085616ec0e47a674f6803331c2f14cbc04a50",
+      "e5_val": "e2e47f540bb478260bad999aecea60cb7577c5ab4ef6bcc28775e49b76fb2a40",
+      "plantdoc_original_test": "130349d1f9749cc6fd52a962a5e389e6b7592eda40bef0be72c2d24e1791c5b5"
+    },
+    "validation_rule": "max_macro_f1",
+    "original_test_used_for_selection": false
+  }
+}

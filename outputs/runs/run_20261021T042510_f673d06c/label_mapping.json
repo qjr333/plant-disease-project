@@ -1,0 +1,104 @@
+{
+  "class_names": [
+    "tomato_bacterial_spot",
+    "tomato_early_blight",
+    "tomato_late_blight",
+    "tomato_leaf_mold",
+    "tomato_septoria_leaf_spot",
+    "tomato_tomato_mosaic_virus",
+    "tomato_tomato_yellow_leaf_curl_virus",
+    "tomato_healthy"
+  ],
+  "class_to_idx": {
+    "tomato_bacterial_spot": 0,
+    "tomato_early_blight": 1,
+    "tomato_late_blight": 2,
+    "tomato_leaf_mold": 3,
+    "tomato_septoria_leaf_spot": 4,
+    "tomato_tomato_mosaic_virus": 5,
+    "tomato_tomato_yellow_leaf_curl_virus": 6,
+    "tomato_healthy": 7
+  },
+  "classes": [
+    {
+      "label": "tomato_bacterial_spot",
+      "label_index": 0,
+      "plantvillage_class": "tomato_bacterial_spot",
+      "plantdoc_classes": [
+        "tomato_leaf_bacterial_spot"
+      ],
+      "display_name": "番茄细菌斑病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_early_blight",
+      "label_index": 1,
+      "plantvillage_class": "tomato_early_blight",
+      "plantdoc_classes": [
+        "tomato_early_blight_leaf"
+      ],
+      "display_name": "番茄早疫病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_late_blight",
+      "label_index": 2,
+      "plantvillage_class": "tomato_late_blight",
+      "plantdoc_classes": [
+        "tomato_leaf_late_blight"
+      ],
+      "display_name": "番茄晚疫病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_leaf_mold",
+      "label_index": 3,
+      "plantvillage_class": "tomato_leaf_mold",
+      "plantdoc_classes": [
+        "tomato_mold_leaf"
+      ],
+      "display_name": "番茄叶霉病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_septoria_leaf_spot",
+      "label_index": 4,
+      "plantvillage_class": "tomato_septoria_leaf_spot",
+      "plantdoc_classes": [
+        "tomato_septoria_leaf_spot"
+      ],
+      "display_name": "番茄斑枯病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_tomato_mosaic_virus",
+      "label_index": 5,
+      "plantvillage_class": "tomato_tomato_mosaic_virus",
+      "plantdoc_classes": [
+        "tomato_leaf_mosaic_virus"
+      ],
+      "display_name": "番茄花叶病毒病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_tomato_yellow_leaf_curl_virus",
+      "label_index": 6,
+      "plantvillage_class": "tomato_tomato_yellow_leaf_curl_virus",
+      "plantdoc_classes": [
+        "tomato_leaf_yellow_virus"
+      ],
+      "display_name": "番茄黄化曲叶病毒病",
+      "mapping_status": "provisional"
+    },
+    {
+      "label": "tomato_healthy",
+      "label_index": 7,
+      "plantvillage_class": "tomato_healthy",
+      "plantdoc_classes": [
+        "tomato_leaf"
+      ],
+      "display_name": "健康番茄叶片",
+      "mapping_status": "provisional"
+    }
+  ]
+}

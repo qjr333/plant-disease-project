@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "device": "auto",
+  "data": {
+    "train_manifest": "data/splits/pv_train.csv",
+    "val_manifest": "data/splits/pv_val.csv",
+    "test_manifest": "data/splits/pv_test.csv",
+    "external_manifest": "data/splits/plantdoc_external_all.csv",
+    "external_train_manifest": "data/splits/plantdoc_external_train.csv",
+    "external_test_manifest": "data/splits/plantdoc_external_test.csv",
+    "image_size": 224,
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 16,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "lr_by_strategy": {
+      "freeze": 0.001,
+      "partial": 0.0001,
+      "full": 0.0001
+    },
+    "weight_decay": 0.0001,
+    "early_stopping": true,
+    "patience": 3,
+    "num_workers": 0,
+    "monitor": "val_macro_f1"
+  },
+  "model": {
+    "name": "efficientnet_b0",
+    "weights": "IMAGENET1K_V1",
+    "finetuning": "full"
+  },
+  "augmentation": "basic",
+  "experiment_stage": "E3",
+  "smoke_test": false,
+  "parent_run_id": "e2_efficientnet_b0_full_basic_s42_20261021T054511_b4f88c"
+}

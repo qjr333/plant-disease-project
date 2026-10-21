@@ -1,0 +1,10 @@
+{
+  "run_id": "e6_b_e5b_mixed_partial_s42_20261021T194817_563c60",
+  "status": "completed",
+  "epochs_completed": 10,
+  "best_epoch": 10,
+  "best_score": 0.373250592000592,
+  "best_pv_f1": 0.9703794964761246,
+  "seconds": 171.25348608299987,
+  "error": null
+}

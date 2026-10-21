@@ -1,0 +1,16 @@
+{
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "device": "cpu",
+  "packages": {
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "Pillow": "11.3.0",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.9.4",
+    "nbformat": "5.10.4"
+  }
+}

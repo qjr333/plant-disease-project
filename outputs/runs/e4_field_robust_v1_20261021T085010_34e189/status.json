@@ -1,0 +1,26 @@
+{
+  "run_id": "e4_field_robust_v1_20261021T085010_34e189",
+  "status": "running",
+  "smoke_test": false,
+  "started_at": "2026-10-21T08:50:10.805862+00:00",
+  "epochs_completed": 1,
+  "dataset_fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815",
+  "sample_counts": {
+    "train": 10543,
+    "val": 2264
+  },
+  "parameters": {
+    "total": 4017796,
+    "trainable": 4017796,
+    "frozen": 0
+  },
+  "device": "mps",
+  "best_score": 0.9679821049557382,
+  "best_epoch": 1,
+  "validation_metrics": {
+    "loss": 0.08948210855351939,
+    "accuracy": 0.9726148409893993,
+    "macro_f1": 0.9679821049557382
+  },
+  "seconds": 224.6939621250001
+}

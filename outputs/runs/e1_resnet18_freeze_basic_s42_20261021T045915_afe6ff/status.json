@@ -1,0 +1,28 @@
+{
+  "run_id": "e1_resnet18_freeze_basic_s42_20261021T045915_afe6ff",
+  "status": "completed",
+  "smoke_test": false,
+  "started_at": "2026-10-21T04:59:15.448948+00:00",
+  "epochs_completed": 10,
+  "dataset_fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815",
+  "sample_counts": {
+    "train": 10543,
+    "val": 2264
+  },
+  "parameters": {
+    "total": 11180616,
+    "trainable": 4104,
+    "frozen": 11176512
+  },
+  "device": "mps",
+  "best_score": 0.8987219191509253,
+  "best_epoch": 10,
+  "validation_metrics": {
+    "loss": 0.25152194225704444,
+    "accuracy": 0.9187279151943463,
+    "macro_f1": 0.8987219191509253
+  },
+  "seconds": 427.10539512500003,
+  "monitor": "val_macro_f1",
+  "finished_at": "2026-10-21T05:06:22.554822+00:00"
+}

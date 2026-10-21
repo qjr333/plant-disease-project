@@ -1,0 +1,28 @@
+{
+  "run_id": "e1_mobilenet_v2_freeze_basic_s42_20261021T050622_876774",
+  "status": "completed",
+  "smoke_test": false,
+  "started_at": "2026-10-21T05:06:22.561894+00:00",
+  "epochs_completed": 10,
+  "dataset_fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815",
+  "sample_counts": {
+    "train": 10543,
+    "val": 2264
+  },
+  "parameters": {
+    "total": 2234120,
+    "trainable": 10248,
+    "frozen": 2223872
+  },
+  "device": "mps",
+  "best_score": 0.9037092629162591,
+  "best_epoch": 10,
+  "validation_metrics": {
+    "loss": 0.215417711775875,
+    "accuracy": 0.9249116607773852,
+    "macro_f1": 0.9037092629162591
+  },
+  "seconds": 463.77687979200016,
+  "monitor": "val_macro_f1",
+  "finished_at": "2026-10-21T05:14:06.266147+00:00"
+}

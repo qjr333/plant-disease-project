@@ -1,0 +1,174 @@
+{
+  "pv_val_after_e5": {
+    "sample_count": 2264,
+    "accuracy": 0.9832155477031802,
+    "macro_precision": 0.9742963709281186,
+    "macro_recall": 0.9804688083515909,
+    "macro_f1": 0.9765489544223693,
+    "classification_report": {
+      "tomato_bacterial_spot": {
+        "precision": 0.9815384615384616,
+        "recall": 0.996875,
+        "f1-score": 0.9891472868217054,
+        "support": 320.0
+      },
+      "tomato_early_blight": {
+        "precision": 1.0,
+        "recall": 0.9536423841059603,
+        "f1-score": 0.976271186440678,
+        "support": 151.0
+      },
+      "tomato_late_blight": {
+        "precision": 1.0,
+        "recall": 0.9157894736842105,
+        "f1-score": 0.9560439560439561,
+        "support": 285.0
+      },
+      "tomato_leaf_mold": {
+        "precision": 0.8834355828220859,
+        "recall": 1.0,
+        "f1-score": 0.9381107491856677,
+        "support": 144.0
+      },
+      "tomato_septoria_leaf_spot": {
+        "precision": 0.9961685823754789,
+        "recall": 0.9774436090225563,
+        "f1-score": 0.9867172675521821,
+        "support": 266.0
+      },
+      "tomato_tomato_mosaic_virus": {
+        "precision": 0.9655172413793104,
+        "recall": 1.0,
+        "f1-score": 0.9824561403508771,
+        "support": 56.0
+      },
+      "tomato_tomato_yellow_leaf_curl_virus": {
+        "precision": 0.9962825278810409,
+        "recall": 1.0,
+        "f1-score": 0.9981378026070763,
+        "support": 804.0
+      },
+      "tomato_healthy": {
+        "precision": 0.9714285714285714,
+        "recall": 1.0,
+        "f1-score": 0.9855072463768116,
+        "support": 238.0
+      },
+      "accuracy": 0.9832155477031802,
+      "macro avg": {
+        "precision": 0.9742963709281186,
+        "recall": 0.9804688083515909,
+        "f1-score": 0.9765489544223693,
+        "support": 2264.0
+      },
+      "weighted avg": {
+        "precision": 0.9843498199930051,
+        "recall": 0.9832155477031802,
+        "f1-score": 0.9832342805888038,
+        "support": 2264.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        319,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        6,
+        144,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        261,
+        15,
+        1,
+        0,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        144,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        260,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        56,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        804,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        238
+      ]
+    ],
+    "class_names": [
+      "tomato_bacterial_spot",
+      "tomato_early_blight",
+      "tomato_late_blight",
+      "tomato_leaf_mold",
+      "tomato_septoria_leaf_spot",
+      "tomato_tomato_mosaic_virus",
+      "tomato_tomato_yellow_leaf_curl_virus",
+      "tomato_healthy"
+    ],
+    "total": 4017796,
+    "trainable": 10248,
+    "frozen": 4007548,
+    "dataset": "pv_val_after_e5",
+    "manifest": "data/splits/pv_val.csv",
+    "checkpoint_bytes": 16352239,
+    "batch_amortized_inference_ms": 3.468921192579479,
+    "device": "mps",
+    "training_seconds": 47.58281858300006,
+    "smoke_test": false
+  }
+}

@@ -1,0 +1,3 @@
+﻿experiment,parent,baseline_pd_f1,baseline_pv_f1,best_pd_f1,best_pv_f1,best_epoch,epochs_completed,run_dir
+e6_a_e5a_mixed_partial,e5_a_e3_plantdoc_head_s42_20261021T193406_c9fd49,0.3191465386141216,0.9765489544223693,0.3889174170994658,0.9720210591755762,1,5,/Users/qingjiarui/Desktop/深度学习课程作业/基于迁移学习的植物叶片病害识别与真实场景泛化优化研究/plant-disease-project/outputs/runs/e6_a_e5a_mixed_partial_s42_20261021T194638_0bc002
+e6_b_e5b_mixed_partial,e5_b_e4_plantdoc_head_s42_20261021T193455_27c773,0.31285214004002254,0.9836297332880811,0.373250592000592,0.9703794964761246,10,10,/Users/qingjiarui/Desktop/深度学习课程作业/基于迁移学习的植物叶片病害识别与真实场景泛化优化研究/plant-disease-project/outputs/runs/e6_b_e5b_mixed_partial_s42_20261021T194817_563c60

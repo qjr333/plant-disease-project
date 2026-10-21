@@ -1,0 +1,17 @@
+﻿dataset,true_label,samples,errors,error_rate,most_confused_with
+plantvillage_test,tomato_bacterial_spot,319,1,0.003134796238244514,tomato_tomato_yellow_leaf_curl_virus
+plantvillage_test,tomato_early_blight,149,3,0.020134228187919462,tomato_late_blight
+plantvillage_test,tomato_late_blight,285,6,0.021052631578947368,tomato_early_blight
+plantvillage_test,tomato_leaf_mold,144,0,0.0,
+plantvillage_test,tomato_septoria_leaf_spot,265,7,0.026415094339622643,tomato_tomato_mosaic_virus
+plantvillage_test,tomato_tomato_mosaic_virus,56,0,0.0,
+plantvillage_test,tomato_tomato_yellow_leaf_curl_virus,803,0,0.0,
+plantvillage_test,tomato_healthy,238,0,0.0,
+plantdoc_external_all,tomato_bacterial_spot,73,72,0.9863013698630136,tomato_early_blight
+plantdoc_external_all,tomato_early_blight,76,30,0.39473684210526316,tomato_septoria_leaf_spot
+plantdoc_external_all,tomato_late_blight,102,38,0.37254901960784315,tomato_early_blight
+plantdoc_external_all,tomato_leaf_mold,73,73,1.0,tomato_late_blight
+plantdoc_external_all,tomato_septoria_leaf_spot,117,50,0.42735042735042733,tomato_early_blight
+plantdoc_external_all,tomato_tomato_mosaic_virus,53,53,1.0,tomato_early_blight
+plantdoc_external_all,tomato_tomato_yellow_leaf_curl_virus,72,68,0.9444444444444444,tomato_septoria_leaf_spot
+plantdoc_external_all,tomato_healthy,63,60,0.9523809523809523,tomato_late_blight

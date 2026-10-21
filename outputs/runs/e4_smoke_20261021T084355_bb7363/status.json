@@ -1,0 +1,28 @@
+{
+  "run_id": "e4_smoke_20261021T084355_bb7363",
+  "status": "completed",
+  "smoke_test": true,
+  "started_at": "2026-10-21T08:43:55.347414+00:00",
+  "epochs_completed": 1,
+  "dataset_fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815",
+  "sample_counts": {
+    "train": 16,
+    "val": 8
+  },
+  "parameters": {
+    "total": 4017796,
+    "trainable": 4017796,
+    "frozen": 0
+  },
+  "device": "mps",
+  "best_score": 0.03571428571428571,
+  "best_epoch": 1,
+  "validation_metrics": {
+    "loss": 2.133784294128418,
+    "accuracy": 0.125,
+    "macro_f1": 0.03571428571428571
+  },
+  "seconds": 9.536185250000017,
+  "monitor": "val_macro_f1",
+  "finished_at": "2026-10-21T08:44:04.883610+00:00"
+}

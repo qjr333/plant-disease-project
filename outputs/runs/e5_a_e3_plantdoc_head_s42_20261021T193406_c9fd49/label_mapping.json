@@ -1,0 +1,12 @@
+{
+  "class_names": [
+    "tomato_bacterial_spot",
+    "tomato_early_blight",
+    "tomato_late_blight",
+    "tomato_leaf_mold",
+    "tomato_septoria_leaf_spot",
+    "tomato_tomato_mosaic_virus",
+    "tomato_tomato_yellow_leaf_curl_virus",
+    "tomato_healthy"
+  ]
+}

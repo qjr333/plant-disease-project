@@ -30,3 +30,6 @@ venv/
 !/outputs/figures/.gitkeep
 /outputs/tables/*
 !/outputs/tables/.gitkeep
+
+# Local datasets
+/data/

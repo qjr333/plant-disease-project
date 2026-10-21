@@ -1,0 +1,174 @@
+{
+  "smoke_validation": {
+    "sample_count": 8,
+    "accuracy": 0.25,
+    "macro_precision": 0.10416666666666666,
+    "macro_recall": 0.25,
+    "macro_f1": 0.14583333333333331,
+    "classification_report": {
+      "tomato_bacterial_spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "tomato_early_blight": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1-score": 0.5,
+        "support": 1.0
+      },
+      "tomato_late_blight": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "tomato_leaf_mold": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "tomato_septoria_leaf_spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "tomato_tomato_mosaic_virus": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "tomato_tomato_yellow_leaf_curl_virus": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "tomato_healthy": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1-score": 0.6666666666666666,
+        "support": 1.0
+      },
+      "accuracy": 0.25,
+      "macro avg": {
+        "precision": 0.10416666666666666,
+        "recall": 0.25,
+        "f1-score": 0.14583333333333331,
+        "support": 8.0
+      },
+      "weighted avg": {
+        "precision": 0.10416666666666666,
+        "recall": 0.25,
+        "f1-score": 0.14583333333333331,
+        "support": 8.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "class_names": [
+      "tomato_bacterial_spot",
+      "tomato_early_blight",
+      "tomato_late_blight",
+      "tomato_leaf_mold",
+      "tomato_septoria_leaf_spot",
+      "tomato_tomato_mosaic_virus",
+      "tomato_tomato_yellow_leaf_curl_virus",
+      "tomato_healthy"
+    ],
+    "total": 11180616,
+    "trainable": 4104,
+    "frozen": 11176512,
+    "dataset": "smoke_validation",
+    "manifest": "outputs/runs/run_20261021T042510_f673d06c/smoke_validation.csv",
+    "checkpoint_bytes": 44798987,
+    "batch_amortized_inference_ms": 9.179161499999644,
+    "device": "cpu",
+    "training_seconds": 1.0242608339999961,
+    "smoke_test": true
+  }
+}

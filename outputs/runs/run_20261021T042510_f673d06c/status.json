@@ -1,0 +1,28 @@
+{
+  "run_id": "run_20261021T042510_f673d06c",
+  "status": "completed",
+  "smoke_test": true,
+  "started_at": "2026-10-21T04:25:10.545006+00:00",
+  "epochs_completed": 1,
+  "dataset_fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815",
+  "sample_counts": {
+    "train": 16,
+    "val": 8
+  },
+  "parameters": {
+    "total": 11180616,
+    "trainable": 4104,
+    "frozen": 11176512
+  },
+  "device": "cpu",
+  "best_score": 0.14583333333333331,
+  "best_epoch": 1,
+  "validation_metrics": {
+    "loss": 2.134629726409912,
+    "accuracy": 0.25,
+    "macro_f1": 0.14583333333333331
+  },
+  "seconds": 1.0242608339999961,
+  "monitor": "val_macro_f1",
+  "finished_at": "2026-10-21T04:25:11.569252+00:00"
+}
