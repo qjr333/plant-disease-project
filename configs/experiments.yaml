@@ -1,10 +1,25 @@
-baseline_models: [resnet18, mobilenet_v2, efficientnet_b0]
-finetuning_strategies: [freeze, partial, full]
-augmentations: [none, basic, combined]
-selected_backbone: null
-selected_finetuning: null
-selected_augmentation: null
-selected_runs:
-  e1: null
-  e2: null
-  e3: null
+{
+  "baseline_models": [
+    "resnet18",
+    "mobilenet_v2",
+    "efficientnet_b0"
+  ],
+  "finetuning_strategies": [
+    "freeze",
+    "partial",
+    "full"
+  ],
+  "augmentations": [
+    "none",
+    "basic",
+    "combined"
+  ],
+  "selected_backbone": "efficientnet_b0",
+  "selected_finetuning": "full",
+  "selected_augmentation": "combined",
+  "selected_runs": {
+    "e1": "e1_efficientnet_b0_freeze_basic_s42_20261021T051406_4c08b7",
+    "e2": "e2_efficientnet_b0_full_basic_s42_20261021T054511_b4f88c",
+    "e3": "e3_efficientnet_b0_full_combined_s42_20261021T065510_c05233"
+  }
+}
