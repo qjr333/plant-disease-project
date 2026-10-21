@@ -1,14 +1,15 @@
-# Core research environment. Record resolved versions after the first validated run.
-torch
-torchvision
-numpy
-pandas
-scikit-learn
-matplotlib
-seaborn
-Pillow
-jupyterlab
-ipykernel
-nbformat
-PyYAML
-tqdm
+# 本次实际验证环境（Python 3.9）；锁定直接依赖以便复现实验。
+torch==2.8.0
+torchvision==0.23.0
+numpy==2.0.2
+pandas==2.3.3
+scikit-learn==1.6.1
+matplotlib==3.9.4
+seaborn==0.13.2
+Pillow==11.3.0
+jupyterlab==4.5.11
+ipykernel==6.31.0
+nbformat==5.10.4
+nbconvert==7.17.2
+PyYAML==6.0.3
+tqdm==4.70.1

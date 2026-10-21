@@ -1,0 +1,459 @@
+{
+  "purpose": "软件验收；不是正式八分类研究指标",
+  "environment": {
+    "python": "3.9.6",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "device": "mps",
+    "packages": {
+      "torch": "2.8.0",
+      "torchvision": "0.23.0",
+      "numpy": "2.0.2",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.6.1",
+      "Pillow": "11.3.0",
+      "PyYAML": "6.0.3",
+      "matplotlib": "3.9.4",
+      "nbformat": "5.10.4"
+    }
+  },
+  "python_syntax": "passed",
+  "labels": {
+    "count": 8,
+    "order": [
+      "tomato_bacterial_spot",
+      "tomato_early_blight",
+      "tomato_late_blight",
+      "tomato_leaf_mold",
+      "tomato_septoria_leaf_spot",
+      "tomato_tomato_mosaic_virus",
+      "tomato_tomato_yellow_leaf_curl_virus",
+      "tomato_healthy"
+    ]
+  },
+  "data_preparation": {
+    "status": "ready",
+    "seed": 42,
+    "ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "counts": {
+      "pv_train": 10543,
+      "pv_val": 2264,
+      "pv_test": 2259,
+      "plantdoc_external_train": 569,
+      "plantdoc_external_test": 60,
+      "plantdoc_external_all": 629
+    },
+    "per_class": [
+      {
+        "label_index": 0,
+        "label": "tomato_bacterial_spot",
+        "pv_train": 1488,
+        "pv_val": 320,
+        "pv_test": 319,
+        "plantdoc_external_train": 68,
+        "plantdoc_external_test": 5,
+        "plantdoc_external_all": 73
+      },
+      {
+        "label_index": 1,
+        "label": "tomato_early_blight",
+        "pv_train": 700,
+        "pv_val": 151,
+        "pv_test": 149,
+        "plantdoc_external_train": 68,
+        "plantdoc_external_test": 8,
+        "plantdoc_external_all": 76
+      },
+      {
+        "label_index": 2,
+        "label": "tomato_late_blight",
+        "pv_train": 1331,
+        "pv_val": 285,
+        "pv_test": 285,
+        "plantdoc_external_train": 92,
+        "plantdoc_external_test": 10,
+        "plantdoc_external_all": 102
+      },
+      {
+        "label_index": 3,
+        "label": "tomato_leaf_mold",
+        "pv_train": 664,
+        "pv_val": 144,
+        "pv_test": 144,
+        "plantdoc_external_train": 69,
+        "plantdoc_external_test": 4,
+        "plantdoc_external_all": 73
+      },
+      {
+        "label_index": 4,
+        "label": "tomato_septoria_leaf_spot",
+        "pv_train": 1240,
+        "pv_val": 266,
+        "pv_test": 265,
+        "plantdoc_external_train": 108,
+        "plantdoc_external_test": 9,
+        "plantdoc_external_all": 117
+      },
+      {
+        "label_index": 5,
+        "label": "tomato_tomato_mosaic_virus",
+        "pv_train": 261,
+        "pv_val": 56,
+        "pv_test": 56,
+        "plantdoc_external_train": 43,
+        "plantdoc_external_test": 10,
+        "plantdoc_external_all": 53
+      },
+      {
+        "label_index": 6,
+        "label": "tomato_tomato_yellow_leaf_curl_virus",
+        "pv_train": 3750,
+        "pv_val": 804,
+        "pv_test": 803,
+        "plantdoc_external_train": 66,
+        "plantdoc_external_test": 6,
+        "plantdoc_external_all": 72
+      },
+      {
+        "label_index": 7,
+        "label": "tomato_healthy",
+        "pv_train": 1109,
+        "pv_val": 238,
+        "pv_test": 238,
+        "plantdoc_external_train": 55,
+        "plantdoc_external_test": 8,
+        "plantdoc_external_all": 63
+      }
+    ],
+    "quality": {
+      "raw_target_images": 15824,
+      "excluded": 129,
+      "exclusion_reasons": {
+        "source_annotation": 72,
+        "duplicate_content_or_confirmed_photo": 40,
+        "duplicate_label_conflict": 17
+      },
+      "pv_known_leaf_group_images": 9735,
+      "pv_source_unknown_images": 5331,
+      "plantdoc_raw_by_source": {
+        "train": 675,
+        "test": 69
+      },
+      "source_annotation_scope": "复用旧人工初筛中有具体内容/标注依据的排除；不沿用缺少分组即排除的旧政策，也不代表八类均已人工审核。",
+      "leaf_map_sha256": "3b4b253683c6911744959a3870a92509b1faa1ee34e9f8585e21d0fe6337a25b",
+      "limitations": [
+        "未匹配官方来源组的图像按单文件分组，不能据此宣称不存在同叶片泄漏。",
+        "未重新执行全量近重复或专家病理审核，源标签错误和未识别同源图仍可能存在。",
+        "PlantDoc 健康及黄化病毒映射为暂定语义对应；原始 train/test 均仅作最终外部评估。"
+      ]
+    },
+    "validation": {
+      "status": "passed",
+      "counts": {
+        "pv_train": 10543,
+        "pv_val": 2264,
+        "pv_test": 2259,
+        "plantdoc_external_train": 569,
+        "plantdoc_external_test": 60,
+        "plantdoc_external_all": 629
+      },
+      "checks": [
+        "labels",
+        "paths",
+        "byte_hash",
+        "pixel_hash",
+        "known_source_groups",
+        "external_union"
+      ],
+      "limitation": "此处核查清单一致性；磁盘内容由 prepare_manifests 解码和计算指纹。仅核查已知来源组，仍可能有未识别同源图。"
+    },
+    "fingerprint": "65e16a548fb193b9d39fdb5114591eeb9fd90d17afbfa6a28865d9b59300a815"
+  },
+  "partition_validation": {
+    "status": "passed",
+    "counts": {
+      "pv_train": 10543,
+      "pv_val": 2264,
+      "pv_test": 2259,
+      "plantdoc_external_train": 569,
+      "plantdoc_external_test": 60,
+      "plantdoc_external_all": 629
+    },
+    "checks": [
+      "labels",
+      "paths",
+      "byte_hash",
+      "pixel_hash",
+      "known_source_groups",
+      "external_union"
+    ],
+    "limitation": "此处核查清单一致性；磁盘内容由 prepare_manifests 解码和计算指纹。仅核查已知来源组，仍可能有未识别同源图。"
+  },
+  "all_dataloader_iterations": {
+    "pv_train": 10543,
+    "pv_val": 2264,
+    "pv_test": 2259,
+    "plantdoc_external_train": 569,
+    "plantdoc_external_test": 60,
+    "plantdoc_external_all": 629
+  },
+  "models": [
+    {
+      "model": "resnet18",
+      "strategy": "freeze",
+      "output": [
+        2,
+        8
+      ],
+      "total": 11180616,
+      "trainable": 4104,
+      "frozen": 11176512,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "resnet18",
+      "strategy": "partial",
+      "output": [
+        2,
+        8
+      ],
+      "total": 11180616,
+      "trainable": 8397832,
+      "frozen": 2782784,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "resnet18",
+      "strategy": "full",
+      "output": [
+        2,
+        8
+      ],
+      "total": 11180616,
+      "trainable": 11180616,
+      "frozen": 0,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "mobilenet_v2",
+      "strategy": "freeze",
+      "output": [
+        2,
+        8
+      ],
+      "total": 2234120,
+      "trainable": 10248,
+      "frozen": 2223872,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "mobilenet_v2",
+      "strategy": "partial",
+      "output": [
+        2,
+        8
+      ],
+      "total": 2234120,
+      "trainable": 1691592,
+      "frozen": 542528,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "mobilenet_v2",
+      "strategy": "full",
+      "output": [
+        2,
+        8
+      ],
+      "total": 2234120,
+      "trainable": 2234120,
+      "frozen": 0,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "efficientnet_b0",
+      "strategy": "freeze",
+      "output": [
+        2,
+        8
+      ],
+      "total": 4017796,
+      "trainable": 10248,
+      "frozen": 4007548,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "efficientnet_b0",
+      "strategy": "partial",
+      "output": [
+        2,
+        8
+      ],
+      "total": 4017796,
+      "trainable": 1139640,
+      "frozen": 2878156,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    },
+    {
+      "model": "efficientnet_b0",
+      "strategy": "full",
+      "output": [
+        2,
+        8
+      ],
+      "total": 4017796,
+      "trainable": 4017796,
+      "frozen": 0,
+      "backward": "passed",
+      "frozen_batchnorm": "passed"
+    }
+  ],
+  "smoke_training": {
+    "run_id": "run_20261021T042510_f673d06c",
+    "status": "completed",
+    "sample_counts": {
+      "train": 16,
+      "val": 8
+    },
+    "checkpoint_reload": "passed",
+    "evaluation_on_validation_subset": "passed",
+    "inference": "passed",
+    "excluded_from_formal_selection": true
+  },
+  "run_statuses": [
+    {
+      "run_id": "run_20261021T042510_f673d06c",
+      "stage": "E1",
+      "model": "resnet18",
+      "finetuning": "freeze",
+      "augmentation": "basic",
+      "status": "completed",
+      "smoke_test": true,
+      "epochs_completed": 1,
+      "seconds": 1.0242608339999961,
+      "error": null
+    }
+  ],
+  "limitations": [
+    "本次环境 MPS 不可用，实际训练与前反向验收使用 CPU；Apple Silicon 的 MPS 实际运行仍需本机验证。",
+    "未运行完整正式实验；未使用独立测试或 PlantDoc 指标调参。",
+    "可选 Grad-CAM/Gradio 依赖未安装时不进行实际界面和热力图验收。"
+  ],
+  "elapsed_seconds": 33.882521665999995,
+  "notebook_execution": [
+    {
+      "notebook": "01_data_preparation.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    },
+    {
+      "notebook": "02_backbone_comparison.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    },
+    {
+      "notebook": "03_finetuning_comparison.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    },
+    {
+      "notebook": "04_augmentation_ablation.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    },
+    {
+      "notebook": "05_cross_domain_evaluation.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    },
+    {
+      "notebook": "06_gradcam_error_analysis.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    },
+    {
+      "notebook": "07_gradio_demo.ipynb",
+      "status": "passed",
+      "code_cells_executed": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "mode": "fresh namespace, default switches, no formal training or final evaluation"
+    }
+  ],
+  "notebook_execution_method": "逐格实执行原始代码，每本使用新变量作用域；验证Notebook格式与所有默认开关。未额外启动Jupyter内核进程。",
+  "temporary_smoke_cleanup": [
+    "run_20261021T042002_8aebb61a"
+  ],
+  "unit_tests": {
+    "status": "passed",
+    "count": 5,
+    "command": "python -B -m unittest discover -s tests -v",
+    "coverage": [
+      "corrupt image",
+      "byte/pixel duplicates",
+      "official group preferred",
+      "confirmed photo transitive conflict",
+      "source annotation propagation",
+      "reproducible group split",
+      "stage dependency",
+      "candidate completeness",
+      "smoke/unfinished exclusion",
+      "stale fingerprint rejection"
+    ]
+  },
+  "status": "passed_with_documented_limitations"
+}

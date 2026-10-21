@@ -1,3 +1,6 @@
-"""植物叶片病害识别项目的 Notebook 共用代码。"""
+"""番茄叶片八分类研究共用代码。"""
 
-__version__ = "0.1.0"
+# 所有 src 子模块导入 torch 前设置 MPS 算子回退选项。
+from . import utils
+
+__version__ = "0.2.0"

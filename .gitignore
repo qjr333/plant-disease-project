@@ -1,4 +1,4 @@
-# OS / Python / Jupyter
+# 系统、虚拟环境、密钥和缓存
 .DS_Store
 ._*
 __pycache__/
@@ -11,19 +11,19 @@ venv/
 .env.*
 !.env.example
 
-# Raw datasets and archives: retain small metadata and split CSVs in Git.
+# 原始数据只保存在本地；可追溯元数据与固定 CSV 划分允许提交
 /data/plantvillage/
-/data/plantdoc/train/
-/data/plantdoc/test/
+/data/plantdoc/
 *.zip
 *.tar
 *.tar.gz
 *.7z
 
-# Large weights and generated experiment artifacts.
+# 权重、运行输出、临时文件
 *.pt
 *.pth
 *.ckpt
+*.tmp
 /outputs/runs/*
 !/outputs/runs/.gitkeep
 /outputs/figures/*

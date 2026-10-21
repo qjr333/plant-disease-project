@@ -1,5 +1,4 @@
 {
-  "status": "approved",
   "classes": [
     {
       "label": "tomato_bacterial_spot",
@@ -8,7 +7,8 @@
       "plantdoc_classes": [
         "tomato_leaf_bacterial_spot"
       ],
-      "display_name": "番茄细菌斑病"
+      "display_name": "番茄细菌斑病",
+      "mapping_status": "source_label_correspondence"
     },
     {
       "label": "tomato_early_blight",
@@ -17,7 +17,8 @@
       "plantdoc_classes": [
         "tomato_early_blight_leaf"
       ],
-      "display_name": "番茄早疫病"
+      "display_name": "番茄早疫病",
+      "mapping_status": "source_label_correspondence"
     },
     {
       "label": "tomato_late_blight",
@@ -26,7 +27,8 @@
       "plantdoc_classes": [
         "tomato_leaf_late_blight"
       ],
-      "display_name": "番茄晚疫病"
+      "display_name": "番茄晚疫病",
+      "mapping_status": "source_label_correspondence"
     },
     {
       "label": "tomato_leaf_mold",
@@ -35,7 +37,8 @@
       "plantdoc_classes": [
         "tomato_mold_leaf"
       ],
-      "display_name": "番茄叶霉病"
+      "display_name": "番茄叶霉病",
+      "mapping_status": "source_label_correspondence"
     },
     {
       "label": "tomato_septoria_leaf_spot",
@@ -44,16 +47,50 @@
       "plantdoc_classes": [
         "tomato_septoria_leaf_spot"
       ],
-      "display_name": "番茄斑枯病"
+      "display_name": "番茄斑枯病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_tomato_mosaic_virus",
+      "label_index": 5,
+      "plantvillage_class": "tomato_tomato_mosaic_virus",
+      "plantdoc_classes": [
+        "tomato_leaf_mosaic_virus"
+      ],
+      "display_name": "番茄花叶病毒病",
+      "mapping_status": "source_label_correspondence"
+    },
+    {
+      "label": "tomato_tomato_yellow_leaf_curl_virus",
+      "label_index": 6,
+      "plantvillage_class": "tomato_tomato_yellow_leaf_curl_virus",
+      "plantdoc_classes": [
+        "tomato_leaf_yellow_virus"
+      ],
+      "display_name": "番茄黄化曲叶病毒病",
+      "mapping_status": "provisional"
+    },
+    {
+      "label": "tomato_healthy",
+      "label_index": 7,
+      "plantvillage_class": "tomato_healthy",
+      "plantdoc_classes": [
+        "tomato_leaf"
+      ],
+      "display_name": "健康番茄叶片",
+      "mapping_status": "provisional"
     }
   ],
   "review": {
-    "date": "2026-10-20",
-    "scope": "五类番茄病害；PlantVillage彩色图训练/验证/同域测试，PlantDoc仅固定外部测试",
-    "method": "源数据标签对应、全量当前文件解码与SHA256核对、PlantVillage官方叶片组精确匹配、PlantDoc全量视觉内容初筛及重复/标签冲突筛查",
-    "label_limitation": "沿用源数据集病害标注，未进行专家病理学确诊",
-    "plantdoc_group_policy": "保守按类不拆分外测来源桶；reviewed表示分组政策已核对，不表示恢复生物叶片身份",
+    "label_policy": "沿用源数据集标签；没有进行专家病理学确诊。编号与顺序为本研究固定约定。",
+    "plantdoc_healthy": "tomato_leaf 暂定对应健康叶片；原仓库未给严格诊断定义，来源文件名存在疾病及物种疑点，不能证明全部健康。",
+    "plantdoc_yellow_virus": "tomato_leaf_yellow_virus 暂定对应黄化曲叶病毒；目录名称不足以确证 TYLCV，来源中有除草剂/psyllid-yellows 等疑点。",
+    "plantdoc_annotation_limit": "原论文称图像来自互联网搜索并承认可能错标。此映射用于可复现的八类跨域基准，不是重新确诊。",
+    "source_review_policy": "复用已有具体排除证据；不延续旧五类逐图审核状态机或缺少官方分组即排除政策。新增三类未完整人工审核。",
     "provenance_source": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/leaf_grouping/leaf-map.json",
-    "evidence_directory": "data/metadata/audit_20261020"
-  }
+    "plantdoc_source": "https://github.com/pratikkayal/PlantDoc-Dataset",
+    "plantdoc_paper": "https://arxiv.org/abs/1911.10317"
+  },
+  "task": "基于迁移学习的番茄叶片病害识别与跨场景泛化优化研究",
+  "num_classes": 8
 }
